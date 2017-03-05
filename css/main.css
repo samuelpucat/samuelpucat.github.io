@@ -1,43 +1,103 @@
 body {
-    margin: 10px auto;
-    width: 90%;
+    margin: 0;
 }
-nav ul, footer ul {
-    font-family:'Comic Sans', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  width: 100%;  
+  z-index:1000
 }
-nav ul li, footer ul li {
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: fixed;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
     display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+div#header {
+    padding: 10px;
+    color: white;
+    background-color: #333;
 }
 
-ul.posts li {
-    list-style: none;
+div#content {
+    padding:16px; 
+	margin: auto;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+	width: 70%;
+	position: relative;
+}
+
+div#footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    position: fixed;
+  	bottom: 0px;
+  	width: 100%;
+}
+
+div#news {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+div#about {
+    margin: 5px;
+    padding: 10px;
+}
+
+div#article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+div#post {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
 }
