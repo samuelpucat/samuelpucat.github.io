@@ -1,3 +1,11 @@
 name: Samuel Púčať
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+gems:
+    - jemoji
+
+collections:
+  hobbys:
+    output: true
+

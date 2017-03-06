@@ -4,10 +4,28 @@ title: developerský profil
 about: na tejto stránke sa nachádza môj developerský profil
 ---
 <div id="article">
-jazyky
   <ul>
-    <li>C, Java</li>
-    <li>PostgeSQL, hibernate</li>
-    <li>HTML, css</li>
+    <li>jazyky:
+        <ul>
+        {% for language in site.data.languages %}
+            <li> {{ language.language }} </li>
+        {% endfor %}
+        </ul>
+    </li>
+    <li>databazy:
+        <ul>
+        {% for database in site.data.databases %}
+            <li> {{ database.database }} </li>
+        {% endfor %}
+        </ul>
+    </li>
+    <li>webove sluzby:
+        <ul>
+        {% for webservice in site.data.webservices %}
+            <li> {{ webservice.webservice }} </li>
+        {% endfor %}
+        </ul>
+    </li>
   </ul> 
+    
 </div>
