@@ -4,6 +4,9 @@ permalink: /blog/:year/:month/:day/:title
 
 gems:
     - jemoji
+    - jekyll-sitemap
+    - jekyll-timeago
+    - jekyll-toc
 
 collections:
   hobbys:

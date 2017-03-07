@@ -1,4 +1,8 @@
 source "https://rubygems.org"
 
-
-gem 'jemoji'
+group :jekyll_plugins do
+  gem "jemoji"
+  gem "jekyll-sitemap"
+  gem "jekyll-timeago"
+  gem "jekyll-toc"
+end
