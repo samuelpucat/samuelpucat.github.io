@@ -2,5 +2,5 @@
 title: "gambling"
 image_path: "images/gambling.jpg"
 ---
-Zahram si rad ci uz najnovsie hry, ale aj klasiky ako WoW...
+Zahrám si rád či už najnovšie hry, ale aj klasiky ako WoW...
 

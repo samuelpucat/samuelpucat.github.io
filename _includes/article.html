@@ -1,0 +1,51 @@
+<div id="article">
+    <span>
+        {{ post.date | date_to_string }}
+    </span>
+     » 
+    <a href="{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+    </a>
+    <ul>
+        {% if post.category != blank %} 
+            <li>
+            {{ post.category | prepend: "<b>predmet: </b>" }} 
+            </li>
+        {% endif %}
+        {% if post.about != blank %} 
+            <li>
+            {{ post.about | prepend: "<b>zhrnutie: </b>" }} 
+            </li>
+        {% endif %}
+        {% if post.study != blank %} 
+            <li>
+            {{ post.study | replace: 'bc', 'bakalárske' | replace: 'ing', 'inžinierske' | prepend: "<b>štúdium: </b>" }} 
+            </li>
+        {% endif %}        
+        {% if post.class != blank %} 
+            <li>
+            {{ post.class | prepend: "<b>ročník: </b>" }} 
+            </li>
+        {% endif %}
+        {% if post.semester != blank %} 
+            <li>
+            {{ post.semester | prepend: "<b>semester: </b>" }} 
+            </li>
+        {% endif %}
+        {% if post.week != blank %} 
+            <li>
+            {{ post.week | prepend: "<b>týždeň: </b>" }} 
+            </li>
+        {% endif %}
+        {% if post.autor != blank %} 
+            <li>
+            {{ post.autor | prepend: "<b>autor: </b>" }} 
+            </li>
+        {% else %} 
+            <li>
+            autor: neznámy
+            </li>
+        {% endif %}
+    </ul>
+
+</div>

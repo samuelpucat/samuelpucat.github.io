@@ -79,6 +79,7 @@ div#footer {
     position: fixed;
   	bottom: 0px;
   	width: 100%;
+	text-align: center;
 }
 
 div#news {
@@ -150,3 +151,19 @@ div.desc {
     display: table;
     clear: both;
 }
+
+.image-wrapper{
+  max-width:90%;
+  height:auto;
+  position: relative;
+  display:block;
+  margin:0 auto;
+}
+
+.image-wrapper img{
+  max-width:100% !important;
+  height:auto;
+  display:block;
+}
+
+

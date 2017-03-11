@@ -1,14 +1,15 @@
 name: Samuel Púčať
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
 
 gems:
     - jemoji
     - jekyll-sitemap
     - jekyll-timeago
     - jekyll-toc
+    - jekyll-titles-from-headings
+    - jekyll-mentions
 
 collections:
   hobbys:
     output: true
-

@@ -1,10 +1,8 @@
 ---
 layout: blog
-title: bakalarsky projekt
-about: na tejto stranke sa nachadza timeline o mojich pokrokoch na bakalarskej praci
+title: bakalársky projekt
+about: na tejto stránke sa nachádza timeline o mojich pokrokoch na bakalárskej práci
 ---
 {% for post in site.categories.bakproj %}
-    <div id="article">
-        <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </div>
+    {% include article.html %}
 {% endfor %}

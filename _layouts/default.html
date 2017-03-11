@@ -7,37 +7,15 @@
 		</head>
 		<body>
 
-        <ul class="topnav" id="myTopnav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/profil">Developersky profil</a></li>
-          <li><a href="/webpubl">Webove publikovanie</a></li>
-          <li><a href="/bakproj">Bakalarsky projekt</a></li>
-          <li><a href="/hobby">Hobby</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-          </li>
-        </ul>
-
+        {% include navbar.html %}
+        
         <div id="content">
             
             {{ content }}
   
         </div>
 
-        <div id="footer">
-        footer
-        </div>
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
+        {% include footer.html %}
 
         </body>
 	</html>

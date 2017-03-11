@@ -1,17 +1,8 @@
 ---
 layout: tiles
 title: hobby
-about: na tejto stranke sa nachadzaju činnosti ktorym sa venujem vo volnom case
+about: na tejto stránke sa nachádzajú činnosti, ktorým sa venujem vo voľnom čase
 ---
 {% for hobby in site.hobbys %}
-    <div class="responsive">
-        <div class="img">
-            <a target="_blank" href="{{ hobby.image_path }}">
-                <img src="{{ hobby.image_path }}" alt="{{ hobby.title }}" width="300" height="200">
-            </a>
-            <div class="desc">
-                {{ hobby.content }}
-            </div>
-        </div>
-    </div>
+    {% include tile.html %}
 {% endfor %}

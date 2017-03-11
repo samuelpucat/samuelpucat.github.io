@@ -2,4 +2,4 @@
 title: "cycling"
 image_path: "images/cycling.jpg"
 ---
-Bicyklovanie patri medzi najoblubenejsie letne činnosti... :+1:
+Bicyklovanie patrí medzi moje najobľúbenejšie letné činnosti...

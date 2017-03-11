@@ -2,7 +2,11 @@
 layout: titler
 ---
 <div id="news">
-<h2>Novinky</h2>
+{% if page.url == "/" %}
+	<h2>Novinky</h2>
+{% else %}
+	<h2>Novinky na stranke {{page.title}}</h2>
+{% endif %}
 
 {{content}}
 

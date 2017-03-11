@@ -5,4 +5,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-timeago"
   gem "jekyll-toc"
+  gem "jekyll-titles-from-headings"
+  gem "jekyll-mentions"
 end

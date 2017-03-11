@@ -1,10 +1,8 @@
 ---
 layout: blog
-title: domovska stranka
-about: vitajte na mojej stranke... hi there, I'm Samuel Púčať! i'm best known as the horrible cop from 
+title: domovská stránka
+about: vitajte na mojej stránke, som Samuel Púčať a táto stránka je zároveň prvým zadaním na predmet Webové publikovanie. Na stránke nájdete vypracované zadania na predmet WPUB, ale aj pokroky na bakalárskej práci, môj developerský profil, moje hobby a kontakt na moju maličkosť :sunglasses:.
 ---
 {% for post in site.posts %}
-    <div id="article">
-        <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </div>
+    {% include article.html %}
 {% endfor %}
