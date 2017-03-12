@@ -1,31 +1,21 @@
 ---
 layout: titler
-title: developerský profil
-about: na tejto stránke sa nachádza môj developerský profil
+title: Developerský profil
+about: Na tejto stránke sa nachádza môj developerský profil.
 ---
-<div id="article">
-  <ul>
-    <li>jazyky:
-        <ul>
-        {% for language in site.data.languages %}
-            <li> {{ language.language }} </li>
-        {% endfor %}
-        </ul>
-    </li>
-    <li>databázy:
-        <ul>
-        {% for database in site.data.databases %}
-            <li> {{ database.database }} </li>
-        {% endfor %}
-        </ul>
-    </li>
-    <li>webové služby:
-        <ul>
-        {% for webservice in site.data.webservices %}
-            <li> {{ webservice.webservice }} </li>
-        {% endfor %}
-        </ul>
-    </li>
-  </ul> 
-    
+<div>
+<ul>
+    {% for knowledge in site.data.knowledges %}
+        <li>
+            {{ knowledge.knowledge }}
+            <ul>
+                {% for lan in knowledge.lang %}
+                    <li>
+                        {{ lan }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul> 
 </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "knowledge": "developing languages",
+    "lang": ["C", "java SE", "java EE"]
+  },
+  {
+    "knowledge": "databases",
+    "lang": ["PostgreSQL", "ElasticSearch", "Hibernate"]
+  },
+  {
+    "knowledge": "web services",
+    "lang": ["HTML", "css", "Jekyll", "Markdown", "GitHub pages"]
+  },
+  {
+    "knowledge": "algorithm areas",
+    "lang": ["greedy programming", "dynamic programing", "divide and conquer"]
+  },
+  {
+    "knowledge": "software engineering",
+    "lang": ["UML", "multilayer architecture"]
+  }
+]

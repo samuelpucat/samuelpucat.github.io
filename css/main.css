@@ -1,5 +1,8 @@
 ﻿body {
     margin: 0;
+	background-image: url("../images/content_background.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
 ul.topnav {
@@ -32,7 +35,7 @@ ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display: none;}
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:800px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
@@ -40,7 +43,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:800px) {
   ul.topnav.responsive {position: fixed;}
   ul.topnav.responsive li.icon {
     position: absolute;
@@ -105,6 +108,13 @@ div#post {
     background-color: lightgrey;
 }
 
+div#contact {
+    margin: auto;
+	text-align: center;
+	padding: 10px;
+}
+
+/*responsive image in tiles*/
 div.img {
     border: 1px solid #ccc;
 }
@@ -152,6 +162,7 @@ div.desc {
     clear: both;
 }
 
+/*responsive image in post*/
 .image-wrapper{
   max-width:90%;
   height:auto;
@@ -164,6 +175,14 @@ div.desc {
   max-width:100% !important;
   height:auto;
   display:block;
+  margin-left: auto;
+  margin-right: auto
 }
 
-
+.section-nav {
+  background-color: #FFF;
+  margin: 5px 0;
+  padding: 10px 30px;
+  border: 1px solid #E8E8E8;
+  border-radius: 3px;
+}

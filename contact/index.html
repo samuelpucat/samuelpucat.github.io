@@ -1,6 +1,20 @@
 ---
 layout: titler
-title: kontakt
+title: Kontakt
 about: 
 ---
-GIT repozitár: @samuelpucat
+<div id="contact">
+        {% include image.html url="../images/profilovka.jpg" description="profilovka" %}
+</div>
+{% for contact in site.data.contacts %}
+    <div id="contact">
+        <b>{{ contact.contact | replace: 'skola', 'škola'}}: 
+        {% if  contact.domain != blank %} 
+            <a href="{{ contact.domain }}">
+                {{ contact.alter }}
+            </a>
+        {% else %}
+            </b>{{ contact.alter | replace: 'Samuel Pucat', 'Samuel Púčať'}}
+        {% endif %}
+    </div>
+{% endfor %}

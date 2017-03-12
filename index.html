@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: domovská stránka
-about: vitajte na mojej stránke, som Samuel Púčať a táto stránka je zároveň prvým zadaním na predmet Webové publikovanie. Na stránke nájdete vypracované zadania na predmet WPUB, ale aj pokroky na bakalárskej práci, môj developerský profil, moje hobby a kontakt na moju maličkosť :sunglasses:.
+title: Vitajte
+about: Vitajte na mojej stránke, som Samuel Púčať a táto stránka je zároveň prvým zadaním na predmet Webové publikovanie. Na stránke nájdete vypracované zadania na predmet WPUB, ale aj pokroky na bakalárskej práci, môj developerský profil, moje hobby a kontakt na moju maličkosť :sunglasses:.
 ---
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
     {% include article.html %}
 {% endfor %}

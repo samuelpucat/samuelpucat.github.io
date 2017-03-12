@@ -9,7 +9,7 @@
     <ul>
         {% if post.category != blank %} 
             <li>
-            {{ post.category | prepend: "<b>predmet: </b>" }} 
+            {{ "<b>predmet: </b>" | append: post.category }}
             </li>
         {% endif %}
         {% if post.about != blank %} 
@@ -46,6 +46,15 @@
             autor: neznámy
             </li>
         {% endif %}
+        <li>
+            {% assign minuty = post.content | number_of_words | divided_by: site.readingtime %}
+            {% assign sekundy = post.content | number_of_words | modulo: site.readingtime | times: 60 | divided_by: site.readingtime %}
+            {% if minuty > 0 %}
+                {{ "<b>čas čítania: </b>" | append: minuty | append: " minút, " | append: sekundy | append: " sekúnd" }}
+            {% else %}
+                {{ "<b>čas čítania: </b>" | append: sekundy | append: " sekúnd" }}
+            {% endif %}
+        </li>
     </ul>
 
 </div>

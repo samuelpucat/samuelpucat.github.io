@@ -1,6 +1,8 @@
 name: Samuel Púčať
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title
+baseurl:
+readingtime: 200
 
 gems:
     - jemoji
@@ -13,3 +15,5 @@ gems:
 collections:
   hobbys:
     output: true
+    
+
